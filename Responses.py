@@ -8,5 +8,5 @@ def sample_response(input_text):
     if user_message in ("who are you", "who are you?"):
         return "I am a KTKTools Sample bot"
     if user_message in ("time", "time?"):
-        return "It's " + str(datetime.now())
+        return "It's " + datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
     return "I don't understand you."
